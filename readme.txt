@@ -32,7 +32,7 @@ Accept credit card payment in your Easy Digital Downloads powered store via Brai
 * Venmo payment support (only on mobile)
 * Different checkout style: Standard, Dropin-UI & Hosted Fields.
 * Support from team of WordPress / Easy Digital Downloads experts.
-* **[Go Pro Now](https://omnipay.io/downloads/2checkout-easy-digital-downloads/)**
+* **[Go Pro Now](https://omnipay.io/downloads/braintree-easy-digital-downloads/)**
 
 ### Contribution
 Plugin is open source on [GitHub](https://github.com/OmnipayWP/edd-2checkout). Issues and pull requests are welcome.
