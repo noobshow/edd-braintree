@@ -6,7 +6,7 @@ Plugin URI: https://omnipay.io/downloads/braintree-easy-digital-downloads/
 Description: Accept Credit Card and PayPal payments in your Easy Digital Downloads store via Braintree
 Version: 1.0
 Author: Agbonghama Collins (W3Guy LLC)
-Author URI: http://omnipay.io
+Author URI: https://omnipay.io/downloads/braintree-easy-digital-downloads/
 Text Domain: edd-braintree
 Domain Path: /languages
 */
