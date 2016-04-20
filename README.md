@@ -18,7 +18,8 @@ php plugin-build.php path/to/build/folder
 ```
 
 ## Want More? Go Pro
-* Dropin-UI checkout style.
-* Hosted Field checkout style.
-* Support from team of WordPress / WooCommerce experts.
-* **[Go Pro](https://omnipay.io/downloads/braintree-easy-digital-downloads/)** https://omnipay.io/downloads/braintree-easy-digital-downloads/
+* PayPal payment support.
+* Venmo payment support (only on mobile)
+* Different checkout style: Standard, Dropin-UI & Hosted Fields.
+* Support from team of WordPress / Easy Digital Downloads experts.
+* **[Go Pro Now](https://omnipay.io/downloads/2checkout-easy-digital-downloads/)** https://omnipay.io/downloads/2checkout-easy-digital-downloads/
