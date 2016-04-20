@@ -22,7 +22,7 @@ Accept credit card payment in your Easy Digital Downloads powered store via Brai
 * Test and Live transaction modes support.
 
 
-> ### PCI / Security Concern
+> #### PCI / Security Concern
 > The checkout style in this plugin has some PCI concerns in that credit card information passes through your server before being sent to Braintree for processing.
 > Only use if you have SSL and your store is already PCI compliant otherwise **[upgrade to PRO](https://omnipay.io/downloads/braintree-easy-digital-downloads/)** and use Drop-UI or hosted fields that are without PCI concerns.
 
