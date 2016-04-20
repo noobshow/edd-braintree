@@ -39,11 +39,55 @@ class Braintree {
 		// gateway ID is "eddBraintree"
 		add_action( 'edd_eddBraintree_cc_form', array( $this, 'payment_form' ) );
 		add_action( 'edd_gateway_eddBraintree', array( $this, 'process_payment' ) );
+		add_filter( 'plugin_row_meta', array( $this, 'plugin_row_meta' ), 10, 2 );
 
 		$this->merchant_id = edd_get_option( 'eddBraintree_merchant_id', '' );
 		$this->private_key = edd_get_option( 'eddBraintree_private_key', '' );
 		$this->public_key  = edd_get_option( 'eddBraintree_public_key', '' );
 		$this->merchant_id = edd_get_option( 'eddBraintree_merchant_id', '' );
+
+		$basename = plugin_basename( __FILE__ );
+		$prefix   = is_network_admin() ? 'network_admin_' : '';
+		add_filter( "{$prefix}plugin_action_links_$basename", array( $this, 'action_links' ), 10, 4 );
+	}
+
+	/**
+	 * Show row meta on the plugin screen.
+	 *
+	 * @param    mixed $links Plugin Row Meta
+	 * @param    mixed $file Plugin Base file
+	 *
+	 * @return    array
+	 */
+	public static function plugin_row_meta( $links, $file ) {
+		if ( $file == plugin_basename( __FILE__ ) ) {
+			$row_meta = array(
+				'upgradetopro' => '<a href="https://omnipay.io/downloads/braintree-easy-digital-downloads/" target="__blank" title="' . esc_attr( __( 'Upgrade to PRO', 'edd-braintree' ) ) . '"><span style="color:#f18500">' . __( 'Upgrade to PRO', 'edd-braintree' ) . '</span></a>',
+			);
+
+			return array_merge( $links, $row_meta );
+		}
+
+		return (array) $links;
+	}
+
+	/**
+	 * Action links
+	 *
+	 * @param $actions
+	 * @param $plugin_file
+	 * @param $plugin_data
+	 * @param $context
+	 *
+	 * @return array
+	 */
+	public function action_links( $actions, $plugin_file, $plugin_data, $context ) {
+		$custom_actions = array(
+			'upgradetopro' => '<a href="https://omnipay.io/downloads/braintree-easy-digital-downloads/" target="__blank" title="' . esc_attr( __( 'Upgrade to PRO', 'edd-braintree' ) ) . '"><span style="color:#f18500">' . __( 'Upgrade to PRO', 'edd-braintree' ) . '</span></a>',
+		);
+
+		// add the links to the front of the actions list
+		return array_merge( $custom_actions, $actions );
 	}
 
 
@@ -58,7 +102,7 @@ class Braintree {
 
 		$gateways['eddBraintree'] = array(
 			'admin_label'    => 'Braintree',
-			'checkout_label' => apply_filters( 'edd_braintree_label', __( 'Credit Card (Braintree)', 'edd-braintree' ) ),
+			'checkout_label' => apply_filters( 'edd_braintree_label', __( 'Credit Card', 'edd-braintree' ) ),
 		);
 
 		return $gateways;
