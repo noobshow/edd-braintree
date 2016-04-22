@@ -4,7 +4,7 @@ Donate link: https://omnipay.io/downloads/2checkout-easy-digital-downloads/
 Tags: braintree, braintree payment, dropin-ui, hosted fields, easy digital downloads, edd, payment, payment gateway, gateway, braintree payment gateway, braintree gateway, credit card, paypal, pay, online payment, shop, e-commerce, ecommerce
 Requires at least: 4.0
 Tested up to: 4.5
-Stable tag: 1.0
+Stable tag: 1.0.1
 License: GPL-2.0+
 
 Accept credit card payment in your Easy Digital Downloads powered store via Braintree.
@@ -65,6 +65,9 @@ Have any question, shoot us a mail via support[at]omnipay.io
 2. Plugin settings page.
 
 == Changelog ==
+
+= 1.0.1 =
+* Minor bug fix
 
 = 1.0 =
 * the genesis
