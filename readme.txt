@@ -35,7 +35,7 @@ Accept credit card payment in your Easy Digital Downloads powered store via Brai
 * **[Go Pro Now](https://omnipay.io/downloads/braintree-easy-digital-downloads/)**
 
 ### Contribution
-Plugin is open source on [GitHub](https://github.com/OmnipayWP/edd-2checkout). Issues and pull requests are welcome.
+Plugin is open source on [GitHub](https://github.com/OmnipayWP/edd-braintree). Issues and pull requests are welcome.
 
 ### Plugins You Will Like
 * **[OmniPay](https://omnipay.io)**: OmniPay is a payment gateway extension for WooCommerce and Easy Digital Downloads that bundles several payment providers such as Stripe, 2checkout, PayPal, Braintree, WePay, Authorize.Net together thus saving you money.
