@@ -120,7 +120,16 @@ class Braintree {
 			'braintree' => array(
 				array(
 					'id'   => 'eddBraintree_settings',
-					'name' => '<strong>' . __( 'Braintree Settings', 'edd-braintree' ) . '</strong>',
+					'name' => '<strong>' . __( 'Braintree Settings', 'edd-braintree' ) . '</strong>
+					<div id="message" class="error notice"><p>'
+					          . sprintf(
+						          __(
+							          'Be PCI compliant with "Dropin-UI" and "Hosted Fields" checkout style with and get access to support from WordPress & EDD experts. <strong><a target="_blank" href="%s">Upgrade to PRO Now</a></strong>.',
+							          'edd-2checkout'
+						          ),
+						          'https://omnipay.io/downloads/braintree-easy-digital-downloads/?utm_source=wp-dashboard&utm_medium=edd-braintree-lite'
+					          ) .
+					          '</p></div>',
 					'desc' => __( 'Configure Braintree payment gateway settings', 'edd-braintree' ),
 					'type' => 'header',
 				),
