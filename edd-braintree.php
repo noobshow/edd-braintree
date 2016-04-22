@@ -298,7 +298,7 @@ class Braintree {
 
 		foreach ( $card_info as $key => $value ) {
 			// only validate cc data in $cc_Description array above.
-			if ( in_array( $key, $cc_description ) ) {
+			if ( in_array( $key, array_keys( $cc_description ) ) ) {
 				if ( ! isset( $card_info[ $key ] ) || empty( $card_info[ $key ] ) ) {
 					edd_set_error( 'error_' . $key, sprintf( __( 'You must enter a valid %s.', 'edd-braintree' ), $cc_description[ $key ] ) );
 				}
